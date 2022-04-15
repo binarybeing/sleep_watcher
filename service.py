@@ -15,10 +15,6 @@ async def clentjs(_):
     content = open(os.path.join(ROOT, "client/client.js"), "r").read()
     return web.Response(content_type="application/javascript", text=content)
 
-async def opencvjs(_):
-    content = open(os.path.join(ROOT, "client/opencv.js"), "r").read()
-    return web.Response(content_type="application/javascript", text=content)
-
 
 async def alert_audio(_):
     content = open(os.path.join(ROOT, "./resource/alert.mp3"), "rb").read()

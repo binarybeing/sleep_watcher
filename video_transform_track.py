@@ -9,6 +9,7 @@ import train
 import pickle
 import numpy as np
 import cv2
+from av import VideoFrame
 
 kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (8, 8))
 fgbg = cv2.bgsegm.createBackgroundSubtractorGMG(initializationFrames=5)

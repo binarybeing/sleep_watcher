@@ -33,6 +33,6 @@ if __name__ == "__main__":
     app.router.add_get("/client.js", service.clentjs)
     app.router.add_post("/offer", service.offer)
     app.router.add_get("/resource/alert.mp3", service.alert_audio)
-    app.router.add_get("/opencv.js", service.opencvjs)
+
     web.run_app(app, access_log=None, host=args.host,
                 port=args.port, ssl_context=ssl_context)
