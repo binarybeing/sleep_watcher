@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC client</title>
+    <style></style>
+</head>
+<style type="text/css" >
+    @keyframes alert {
+        0% {
+            background-color: white;
+            border-color: white;
+        }
+        50% {
+
+            border-color: red;
+            background-color: red;
+        }
+        100% {
+
+            background-color: white;
+            border-color: white;
+        }
+    }
+</style>
+<body>
+<button id="start_button" onclick="start()" style="width: 100%; height: 500px;"><div style="font-size: 200px;">开始</div></button>
+<div id="red_warning" style="animation-duration: 1s; animation-iteration-count: infinite; text-align: center;" >
+    <video id="local_video" style="padding-top: 20px;" ></video>    
+    <video id="server_video" style="padding-top: 20px;" autoplay="true" ></video>
+</div>
+
+
+<script src="client.js"></script>
+<script src="opencv.js"></script>
+</body>
+</html>
